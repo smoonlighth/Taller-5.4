@@ -3,9 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Taller Grupal Semana 5</title>
 </head>
 <body>
-    
+    <h2>Semana 01</h2>
+    <h1>Introducción al Desarrollo Web</h1>
+
+
+    <h2>Semana 02</h2>
+    <h1>Introducción al HTML</h1>
+
+
+    <h3>Semana 03</h3>
+    <h1>Introducción al CSS</h1>
+    <p>En esta semana del curso, nos introdujimos a CSS, que es lo que se usa para darle estilo a HTML.</p>
+    <h3>¿Qué es CSS?</h3>
+    <p>CSS es una forma de definir el formato del documento HTML, su nombre viene de Cascading Style Sheets, lo que significa “Hojas de Estilo en Cascada”.</p>
+    <p>El concepto de "Cascada" en CSS describe cómo se combinan y aplican las reglas de estilo de manera jerárquica, teniendo en cuenta la especificidad, el orden de aplicación y la herencia para determinar el estilo final de cada elemento en una página web.</p>
+    <p>Una de las ventajas de usar las hojas de estilo es que permiten hacer un diseño consistente y fácil de modificar.</p>
+    <h4>Sintaxis de las hojas de estilo:</h4>
+    <p>Una hoja de estilo es un fichero de texto plano (sin formato) en el que se define el aspecto de las etiquetas de una página web:</p>
+
+        <p>body { <br>
+            color: black; <br>
+            background-color: white; <br>
+        }<br>
+         h1 { <br>
+            color: white; <br>
+            background-color: black; <br>
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; <br>
+        } 
+        </p>
+    <p>Las hojas de estilo están formadas por varias sentencias, estas están formadas por un selector y un bloque de declaración. El bloque de declaración empieza y acaba con llaves {}.
+    </p>
+    <p>Cada declaración está compuesta por una o varias propiedades y sus valores correspondientes. Estas se separan entre sí por puntos y comas (;).</p>
+    <p>El valor (o valores) van separados de las propiedades por dos puntos (:).
+    </p>
+    <p>En las hojas de estilo, los selectores son la parte de las reglas que indican al navegador a qué elementos se van a aplicar las propiedades incluídas en las declaraciones.
+    </p>
+    <h4>Entre ellos, se encuentran:</h4>
+    <ul>
+        <li>Selector universal: *</li>
+        <li>Selector de tipo: E</li>
+        <li>Selector de clase: E.e</li>
+        <li>Selector de identificador (id): E#e</li>
+        <li>Selector de descendientes: E F</li>
+        <li>Selector de hijos: E > F</li>
+        <li>Selector de consecutivos: E + F</li>
+        <li>Selector de grupo: E, F</li>
+    </ul>
+
+    <h3>Reglas de aplicación de los estilos:</h3>
+    <p>Si se define la misma propiedad para la misma etiqueta con el mismo selector en dos sitios distintos, las reglas de precedencia son las siguiente:
+    </p>
+
+    <ol>
+        <li>Las propiedades definidas en un atributo style se imponen a las propiedades definidas en la etiqueta style, a las propiedades definidas en una hoja de estilo enlazada y a las propiedades por defecto del navegador.</li>
+        <li>Las propiedades definidas en la etiqueta style se imponen a las propiedades definidas en una hoja de estilo enlazada y a las propiedades por defecto del navegador.
+        </li>
+        <li>Las propiedades definidas en una hoja de estilo enlazada se imponen a las propiedades por defecto del navegador.
+        </li>
+        <li>En caso de no aplicar ningún estilo en particular a un elemento, el navegador lo mostrará según sus propiedades por defecto (por ejemplo, los títulos de primer nivel h1 se suelen mostrar en negrita y al doble del tamaño del resto del texto).</li>
+    </ol>
+
+    <p>Si las propiedades en conflicto se encuentran definidas en diferentes hojas de estilo, el navegador aplica el valor definido en la última hoja de estilo enlazada (es decir, en el último enlace link del head).
+    </p>
+
+
+    <h2>Semana 04</h2>
+    <h1>Introducción al JavaScript</h1>
 </body>
 </html>
