@@ -1,7 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+ }
+
+
+ :root {
+    --background: rgb(221, 180, 180);
+    --second-background: rgb(255, 255, 255);
+  }
+
 body {
     font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    background-color: var(--background);
 }
+
+nav {   
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 2em 15%;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(15, 15, 15, 0.8); 
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+  }
 
 p {
     font-size: large;
 }
+
