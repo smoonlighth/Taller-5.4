@@ -8,8 +8,8 @@
 
 
  :root {
-    --background: rgb(221, 180, 180);
-    --second-background: rgb(255, 255, 255);
+    --background: rgb(130, 67, 67);
+    --second-background: linear-gradient(to bottom, #FA9F98, #FCCFCB);
   }
 
 body {
@@ -22,16 +22,109 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 2em 15%;
+    padding: 1em 15%;
     display: flex; 
     align-items: center;
-    justify-content: space-between;
-    background-color: rgb(15, 15, 15, 0.8); 
-    backdrop-filter: blur(10px);
+    justify-content:center;
+    background-color: rgba(210, 135, 135, 0.8); 
+    backdrop-filter: blur(0px);
     z-index: 1000;
   }
 
-p {
+  ul {
+    display: flex;
+    align-items:center;
+    gap: 3em;
+    justify-content: center;
+  }
+
+  nav ul a{
+    color: black;
+    opacity: 0.7;
+    transition: 0.2s ease-in-out;
+    font-weight: 700;
+  }
+
+  nav ul a:hover{
+    opacity: 1;
+  }
+
+  
+
+
+ .sections {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+ }
+
+ section{
+    min-height: 100vh;
+    padding: 5% 15%;
+ }
+
+#sem1, #sem2, #sem3, #sem4 {
+    background: var(--second-background);
+    margin: 20px auto; /* Centrar el contenedor y agregar márgenes */
+    max-width: 1400px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+
+ h1 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium';
+ }
+
+ h3 {
+    text-align: center;
+    font-style: italic;
+ }
+
+ p {
     font-size: large;
+ }
+
+ span {
+    font-style: italic;
+ }
+
+ .footer {
+    background-color: rgba(210, 135, 135, 0.8); 
+    padding: 20px;
+    text-align: center;
+    color: black; /* Color del texto en el fondo inferior */
 }
+
+ ol {
+    font-size: large;
+ }
+
+ #columnas {
+    column-count: 3;
+    column-gap: 20px;
+    list-style-type: circle;
+    column-width: 1cm;
+   
+ }
+
+ #columnas2 {
+    column-count: 2;
+    column-gap: 20px;
+    list-style-type: circle;
+    column-width: 1cm;
+    font-size: large;
+ }
+
+ #note, #elements, #sintaxis {
+    background-color: rgba(253, 168, 168, 0.618);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+    font-size: medium;
+ }
+
+ 
 
